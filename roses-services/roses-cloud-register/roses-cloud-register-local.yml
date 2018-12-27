@@ -9,7 +9,7 @@ eureka:
     response-cache-update-interval-ms: 3000  #eureka server刷新readCacheMap的时间
     #注意，client读取的是readCacheMap，这个时间决定了多久会把readWriteCacheMap的缓存更新到readCacheMap上
   client:
-    register-with-eureka: true #自己也注册到注册中心
+    register-with-eureka: false #自己也注册到注册中心
     fetch-registry: false #需要从其他eureka节点获取注册信息
     service-url:
       defaultZone: http://127.0.0.1:8761/eureka #设置与eureka交互的地址
