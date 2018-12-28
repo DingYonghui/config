@@ -62,8 +62,8 @@ feign:
         connectTimeout: 300  #创建连接的超时时间 单位：毫秒
         readTimeout: 3000    #处理请求的超时时间 单位：毫秒
 #        errorDecoder: cn.stylefeng.roses.core.feign.RosesFeignErrorDecoder
-        requestInterceptors:
-        - cn.stylefeng.roses.core.feign.RosesFeignHeaderProcessInterceptor
+#        requestInterceptors:
+#        - cn.stylefeng.roses.core.feign.RosesFeignHeaderProcessInterceptor
 
 hystrix:
   command:
